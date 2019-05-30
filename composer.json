@@ -56,7 +56,6 @@
             "chmod -R 777 storage", 
             "if [ \"$OAUTH_PUBLIC_KEY\" != \"\" ]; then echo \"$OAUTH_PUBLIC_KEY\" > storage/oauth-public.key; fi",
             "if [ \"$OAUTH_PRIVATE_KEY\" != \"\" ]; then echo \"$OAUTH_PRIVATE_KEY\" > storage/oauth-private.key; fi",
-            "php artisan route:cache",
             "chmod -R 777 storage"
         ],
         "post-autoload-dump": [
