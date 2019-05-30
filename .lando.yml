@@ -1,0 +1,15 @@
+name: lando-laravel
+recipe: laravel
+config:
+  webroot: public
+
+# Add the following if you plan to use Sage as a starter theme
+services:
+  theme:
+    type: node
+    services:
+      ports:
+        - 3000:3000
+tooling:
+  yarn:
+    service: theme
